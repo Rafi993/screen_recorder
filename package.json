@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "electron": "^1.8.4",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "foreman": "^2.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -17,6 +19,6 @@
     "eject": "react-scripts eject",
     "electron": "electron .",
     "electron-dev": "set ELECTRON_START_URL=http://localhost:3000 && electron .",
-    "dev" : "nf start"
+    "dev": "nf start"
   }
 }
