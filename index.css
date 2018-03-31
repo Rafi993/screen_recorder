@@ -1,0 +1,108 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: auto;
+  width: auto;
+}
+
+.recorder {
+  -webkit-app-region: drag;
+  width: 180px;
+  height: 50px;
+  background: #2A313B;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+  position: relative;
+}
+
+.stop {
+  margin-top: 5px;
+  background:#f50072;
+  border: none;
+  outline: none;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  border-radius: 2px;
+  cursor: pointer !important;
+  -webkit-app-region: no-drag;
+  display: block;
+}
+
+
+h3 {
+  margin: 5px;
+  color: #ccc;
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: 0.3rem;
+  font-size: 12px;
+  -webkit-app-region: no-drag;
+  display: inline;
+}
+
+h3:hover {
+  color: #fff;
+}
+
+.close {
+  outline: none;
+  border: none;
+  top: 5px;
+  right: 5px;
+  position: absolute;
+  background: #2A313B;
+  stroke-width: 12px;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.close svg {
+  height:16px;
+  width:16px;
+  fill: #ccc;
+}
+
+.close:hover svg {
+  fill: #fff;
+}
+
+.mic {
+  outline: none;
+  background: #2A313B;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.mic svg {
+  height:24px;
+  width:24px;
+  fill: #ccc;
+  stroke-width: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+.play {
+  outline: none;
+  background: #2A313B;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  margin-left: 4px;
+  padding-right: 0px;
+  cursor: pointer;
+  border-color: transparent transparent transparent #0aff58;
+  -webkit-app-region: no-drag;
+}

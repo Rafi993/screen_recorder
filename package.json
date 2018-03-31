@@ -1,0 +1,23 @@
+{
+  "name": "screen_recorder",
+  "version": "0.0.1",
+  "description": "Minimalist screen recorder using electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafi993/screen_recorder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rafi993/screen_recorder/issues"
+  },
+  "homepage": "https://github.com/Rafi993/screen_recorder#readme",
+  "devDependencies": {
+    "electron": "^1.8.4"
+  }
+}
