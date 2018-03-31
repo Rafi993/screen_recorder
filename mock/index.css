@@ -1,0 +1,66 @@
+.recorder {
+  width: 180px;
+  height: 50px;
+  background: #2A313B;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 5px;
+  position: relative;
+}
+
+.stop{
+  margin-top: 5px;
+  background:#f50072;
+  border: none;
+  outline: none;
+  padding: 10px;
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+}
+
+.stop:hover{
+}
+
+h3{
+  margin: 5px;
+  color: #ccc;
+  font-weight: 600;
+  font-family: sans-serif;
+  letter-spacing: 0.3rem;
+  font-size: 12px;
+  display: inline;
+}
+
+h3:hover{
+  color: #fff;
+}
+
+.close {
+  height:16px;
+  width:16px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  fill: #ccc;
+  stroke-width: 12px;
+  cursor: pointer;
+}
+
+.close:hover{
+  fill: #fff;
+}
+
+.mic{
+  height:24px;
+  width:24px;
+  fill: #ccc;
+  stroke-width: 12px;
+  cursor: pointer;
+}

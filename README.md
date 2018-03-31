@@ -1,2 +1,4 @@
 # screen_recorder
-Minimalist screen recorder using react and electron
+Minimalist screen recorder using electron
+
+![screenshot](/screen_shot.JPG)
