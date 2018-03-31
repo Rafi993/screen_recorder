@@ -25,6 +25,9 @@ const init = ()=> {
   /* ************************** Utilities: END ************************************ */                  
 
   /* *************************** Events: BEGIN *********************************** */
+  const fs = require('fs');
+  let wstream = null;
+
   document
       .getElementById('close')
       .addEventListener("click", e => {
@@ -35,6 +38,7 @@ const init = ()=> {
   let muteStatus = false;
   let seconds = 0;
   let timer = null;
+  let recorder = null;
 
   document
     .getElementById('unmute')
@@ -63,6 +67,8 @@ const init = ()=> {
     removeClass(document.getElementById('play'), 'hidden')
     addClass(document.getElementById('stop'), 'hidden')
     clearInterval(timer);
+    wstream.end();
+    recorder = null;
   })
 
   document
@@ -70,8 +76,29 @@ const init = ()=> {
   .addEventListener('click', e => {
     e.preventDefault();
     seconds = 0;
+
     removeClass(document.getElementById('stop'), 'hidden')
     addClass(document.getElementById('play'), 'hidden')
+    let video = document.querySelector('video')
+    wstream = fs.createWriteStream('myBinaryFile.webgm');
+
+    const request = { sources: ['screen'] };
+
+      navigator.mediaDevices.getUserMedia({
+        video: {
+          mandatory: {
+            chromeMediaSource: 'desktop',
+          }
+        }
+      }).then(returnedStream => {
+        stream = returnedStream;
+        // video.src = URL.createObjectURL(stream);
+        wstream.write(stream);
+
+      }).catch(err => {
+        console.error('Could not get stream: ', err);
+      });
+
     timer = setInterval(()=>{
       seconds++;
       document.getElementsByTagName('h3')[0]

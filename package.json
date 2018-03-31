@@ -19,5 +19,6 @@
   "homepage": "https://github.com/Rafi993/screen_recorder#readme",
   "devDependencies": {
     "electron": "^1.8.4"
-  }
+  },
+  "dependencies": {}
 }
