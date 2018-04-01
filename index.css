@@ -3,11 +3,12 @@ body {
   padding: 0px;
   height: auto;
   width: auto;
+  /* background: #2A313B; */
 }
 
 .recorder {
   -webkit-app-region: drag;
-  width: 180px;
+  width: 160px;
   height: 50px;
   background: #2A313B;
   border-radius: 5px;
